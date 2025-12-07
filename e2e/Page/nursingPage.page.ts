@@ -45,7 +45,7 @@ export class NursingPage {
             await expect(this.page.locator('div[class="caption custom-caption"] h3 span')).toBeVisible();
             await this.clickOnDropdown.selectOption('Pathology');
             await this.uploadImage.setInputFiles("C:\\Users\\satya\\Downloads\\t-shirt offer-02.png");
-            await this.page.waitForTimeout(5000);
+            await this.page.waitForTimeout(3000);
             await this.submitButton.click();
 
             const actualMessage = await this.getTextMesage.textContent();
