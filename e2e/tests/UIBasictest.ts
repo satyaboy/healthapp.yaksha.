@@ -9,7 +9,7 @@ test('first playwright test', async({page})=>{
     const cardTitles=page.locator('.card-body a');
     // const context = await browser.newContext();
     // const page = await context.newPage();      
-    //await page.goto('https://rahulshettyacademy.com/client'); 
+    await page.goto('https://rahulshettyacademy.com/client'); 
     await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
     console.log(await page.title());
 
