@@ -1,0 +1,21 @@
+{
+    "default":{
+        "formatOptions":{
+            "snippetInterface":"async-await"
+        },
+     
+        "paths":[
+            "e2e/features"
+        ],
+        "dryRun":true,
+        "type": "module",
+        "require":[
+            "e2e/stepDefinations/*.ts"
+        ],
+        "requireModule": ["ts-node/register"],
+        "format": ["pretty"]
+
+      
+
+    }
+}
