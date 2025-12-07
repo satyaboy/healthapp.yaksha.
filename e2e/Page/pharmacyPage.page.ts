@@ -10,7 +10,7 @@ export class PharmacyPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.clickPharmacy = page.locator('div:nth-child(1) > ul:nth-child(1) > li:nth-child(29) > a:nth-child(1) > span:nth-child(2)');
+        this.clickPharmacy = page.locator('a[href="#/Pharmacy"]');
         this.clickOrderTab = page.locator('ul[class="page-breadcrumb"] li:nth-child(2) > a:nth-child(1)');
         this.clickExport = page.locator('button[title="Export To Excel"]');
     }

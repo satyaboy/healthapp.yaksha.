@@ -12,7 +12,7 @@ export class AccountingPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.accountPage = page.locator('div:nth-child(1) > ul:nth-child(1) > li:nth-child(20) > a:nth-child(1) > span:nth-child(2)');
+        this.accountPage = page.locator('a[href="#/Accounting"]');
         this.settingTab = page.locator('ul[class="page-breadcrumb"] li:nth-child(2) a:nth-child(1)');
         this.clickLedger = page.locator('.nav-padding.a-tab-active');
         this.searchInput = page.locator('#quickFilterInput');

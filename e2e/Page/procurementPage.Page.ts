@@ -19,7 +19,7 @@ export class ProcurementPage
     constructor(page:Page)
     {
         this.page=page;
-        this.clickProcurement = page.locator('div:nth-child(1) > ul:nth-child(1) > li:nth-child(8) > a:nth-child(1) > span:nth-child(2)');
+        this.clickProcurement = page.locator('a[href="#/ProcurementMain"]');
         this.clickQuotation   = page.locator('ul[class="page-breadcrumb"] li:nth-child(4) > a:nth-child(1)');
         this.clickRequestQuotation = page.locator('input[value=" Request For Quotation"]');
         this.fillSubject = page.locator('#Subject');

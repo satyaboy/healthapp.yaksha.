@@ -12,7 +12,7 @@ export class PastDaysRecordsPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.clickNurshing = page.locator('body > my-app:nth-child(24) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > ul:nth-child(1) > li:nth-child(25) > a:nth-child(1) > span:nth-child(2)');
+        this.clickNurshing = page.locator('a[href="#/Nursing"]');
         this.clickPastDays = page.locator('div[class="wrapper"] li:nth-child(2) a:nth-child(1)');
         this.giveDate = page.locator('en-calendar:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)');
         this.clickOkButton= page.locator('.btn.green.btn-success')

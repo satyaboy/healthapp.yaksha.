@@ -10,7 +10,7 @@ import { LaboratoryPage } from '../Page/laboratoryPage.page'
 import { PharmacyPage } from "../Page/pharmacyPage.page";
 import { MaternityPage } from "../Page/maternityPage.page";
 import { UtilityPage } from "../Page/utilityPage.page";
-import { SettingsPage} from "../Page/settingsPage.page"
+import { SettingsPage } from "../Page/settingsPage.page"
 
 test.describe('Login Functionality', () => {
 

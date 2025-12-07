@@ -13,7 +13,7 @@ export class LaboratoryPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.clickLaboratory = page.locator('div:nth-child(1) > ul:nth-child(1) > li:nth-child(14) > a:nth-child(1) > span:nth-child(2)');
+        this.clickLaboratory = page.locator('a[href="#/Lab"]');
         this.clickCollectionTab = page.locator('ul[class="page-breadcrumb"] li:nth-child(3) > a:nth-child(1)');
         this.giveDate = page.locator('en-calendar:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)');
         this.clickOkButton= page.locator('button[class="btn green btn-success"]');
