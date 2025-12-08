@@ -1,4 +1,10 @@
 {
-    "username":"admin",
+   "ValidLogin":[ 
+    {
+        "username":"admin"
+    },
+    {
     "password":"pass123"
+    }
+  ]
 }
