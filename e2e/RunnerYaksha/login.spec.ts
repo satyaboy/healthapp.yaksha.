@@ -21,7 +21,9 @@ test.describe('Login Functionality', () => {
         await page.goto('https://healthapp.yaksha.com/')
         const username = loginTestData.ValidLogin[0].username;
         const password = loginTestData.ValidLogin[1].password;
-
+        if (!username || !password) {
+            throw new Error('Username or password is missing in loginTestData');
+        }
         await loginpage.performLogin({username,password});
         await expect(page.locator('//*[text()=" admin "]')).toBeVisible();
     })
